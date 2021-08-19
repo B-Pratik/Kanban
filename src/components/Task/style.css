@@ -1,0 +1,36 @@
+.task {
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 5px 0 0 0;
+  border-radius: 3px;
+  cursor: move;
+}
+
+.task .task-title {
+  color: #172b4d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 5px;
+  min-width: 120px;
+}
+
+.task .task-priority {
+  height: 10px;
+  border-radius: 4px;
+  width: 50px;
+}
+
+.task-priority.high {
+  background-color: rgb(235, 90, 70);
+}
+
+.task-priority.low {
+  background-color: rgb(0, 121, 191);
+}
+
+@media only screen and (max-width: 768px) {
+  .task {
+    margin: 0 0 0 5px;
+  }
+}

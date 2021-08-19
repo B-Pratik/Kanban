@@ -1,0 +1,37 @@
+.lane-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.lane {
+  flex: 1;
+  background-color: rgb(235, 236, 240);
+  border-radius: 3px;
+  padding: 5px;
+  margin: 0 5px;
+  height: min-content;
+  max-width: 250px;
+}
+
+.lane.dragging {
+  border: 3px dashed green;
+}
+
+.lane .lane-title {
+  color: rgb(23, 43, 77);
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .lane-body {
+    flex-direction: row;
+  }
+  .lane {
+    width: fit-content;
+    max-width: none;
+    margin: 5px 0;
+  }
+}
